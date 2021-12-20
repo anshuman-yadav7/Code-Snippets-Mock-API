@@ -1,0 +1,131 @@
+.navbar {
+  background-color: #C745F0;
+  /* position: sticky; */
+  /* top: 0; */
+  height: 70px;
+  margin: 0;
+  width: 100%;
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-content>div{
+  flex: 1;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  /* margin-left: 100px; */
+  margin-bottom: 6px;
+}
+
+.header {
+  font-family: 'Lobster Two', cursive;
+  font-size: 36px;
+  color: white;
+  padding: 6px 10px;
+}
+
+svg {
+  color: orange;
+  font-size: 40px;
+  margin-top: 6px;
+    vertical-align: bottom;
+}
+
+.search-input {
+  font-family: 'Lobster Two', cursive;
+  border: 1px solid #f85ad1;
+  border-radius: 5px;
+  font-size: 20px;
+  /* margin: 13px 50px; */
+  padding-left: 10px;
+  height: 40px;
+  width: 450px;
+}
+
+.search-input input[type='text']:hover {
+  border-color: #ff8c3b;
+  box-shadow: 0 0 10px #ff8c3b,
+  0 0 50px #ff8c3b,
+  0 0 10px #ff8c3b,
+  0 0 10px #ff8c3b,
+  0 0 10px #ff8c3b;
+}
+
+.sign {
+  font-family: 'Lobster Two', cursive;
+  padding: 6px;
+  font-size: 24px;
+  color: white;
+  /* margin-left: 500px; */
+  transition: .3s;
+}
+
+.sign:hover {
+  font-size: 22px;
+  border-radius: 5px;
+  background-color: #f85ad1;
+  background-size: 200px;
+  cursor: pointer;
+}
+
+.snippet-card {
+  border-radius: 20px;
+  background-color: white;
+  font-family: 'Lobster Two', cursive;
+  padding: 20px;
+  text-transform: capitalize;
+  transition: .3s;
+  margin: 20px auto;  
+  width: 70%;
+}
+
+.snippet-card:hover {
+  box-shadow: 0 0 10px #f85ad1,
+               0 0 50px #f85ad1,
+               0 0 10px #f85ad1,
+               0 0 10px #f85ad1,
+               0 0 10px #ff8c3b;
+}
+
+.snippet-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.copy-icon {
+  cursor: pointer;
+  transition: .3s;
+}
+
+.copy-icon:hover {
+  box-shadow: 0 0 10px #ff8c3b,
+  0 0 50px #ff8c3b,
+  0 0 10px #ff8c3b,
+  0 0 10px #ff8c3b,
+  0 0 10px #ff8c3b;
+  transform: scale(1.07);
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #f85ad1;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  margin: 5px;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
