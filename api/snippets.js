@@ -37,8 +37,7 @@ const snippets = [
             } catch (err) {
              res.json({ error: err.message || err.toString() });
             }
-        });
-           `
+        });`
     },
     {
         "id": 4,

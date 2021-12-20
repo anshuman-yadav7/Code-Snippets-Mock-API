@@ -18,7 +18,7 @@ app.get("/api/get", (req, res) => {
 app.get("/api/filter/:type", (req, res) => {
     let type = req.params.type;
     type = type.toLowerCase();
-    const filteredData = snippets.snippets.filter(item => item.snippet.toLowerCase().indexOf(type) !== -1 || item.type.toLowerCase().indexOf(type) !== -1);
+    let filteredData = snippets.snippets.filter(item => item.snippet.toLowerCase().indexOf(type) !== -1 || item.type.toLowerCase().indexOf(type) !== -1);
     if (type === "all") {
         filteredData = snippets.snippets;
     }

@@ -1,101 +1,86 @@
 .navbar {
   background-color: #C745F0;
-  /* position: sticky; */
-  /* top: 0; */
   height: 70px;
   margin: 0;
   width: 100%;
 }
 
+svg {
+  color: #ffa500;
+  font-size: 40px;
+  margin-top: 6px;
+  vertical-align: bottom;
+}
+
 .navbar-content {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
 }
-.navbar-content>div{
+
+.navbar-content > div {
   flex: 1;
 }
 
 .header-content {
-  display: flex;
   align-items: center;
-  /* margin-left: 100px; */
+  display: flex;
   margin-bottom: 6px;
+  margin-left: 100px;
 }
 
 .header {
+  color: #ffffff;
   font-family: 'Lobster Two', cursive;
   font-size: 36px;
-  color: white;
   padding: 6px 10px;
 }
 
-svg {
-  color: orange;
-  font-size: 40px;
-  margin-top: 6px;
-    vertical-align: bottom;
-}
-
 .search-input {
-  font-family: 'Lobster Two', cursive;
   border: 1px solid #f85ad1;
   border-radius: 5px;
+  font-family: 'Lobster Two', cursive;
   font-size: 20px;
-  /* margin: 13px 50px; */
-  padding-left: 10px;
   height: 40px;
+  padding-left: 10px;
   width: 450px;
 }
 
-.search-input input[type='text']:hover {
-  border-color: #ff8c3b;
-  box-shadow: 0 0 10px #ff8c3b,
-  0 0 50px #ff8c3b,
-  0 0 10px #ff8c3b,
-  0 0 10px #ff8c3b,
-  0 0 10px #ff8c3b;
-}
-
 .sign {
+  color: #ffffff;
   font-family: 'Lobster Two', cursive;
-  padding: 6px;
   font-size: 24px;
-  color: white;
-  /* margin-left: 500px; */
+  padding: 6px;
   transition: .3s;
 }
 
 .sign:hover {
-  font-size: 22px;
-  border-radius: 5px;
-  background-color: #f85ad1;
   background-size: 200px;
+  background-color: #f85ad1;
+  border-radius: 5px;
   cursor: pointer;
+  font-size: 22px;
 }
 
 .snippet-card {
+  background-color: #ffffff;
   border-radius: 20px;
-  background-color: white;
   font-family: 'Lobster Two', cursive;
+  margin: 20px auto;  
   padding: 20px;
   text-transform: capitalize;
   transition: .3s;
-  margin: 20px auto;  
   width: 70%;
 }
 
 .snippet-card:hover {
-  box-shadow: 0 0 10px #f85ad1,
-               0 0 50px #f85ad1,
-               0 0 10px #f85ad1,
-               0 0 10px #f85ad1,
-               0 0 10px #ff8c3b;
+  box-shadow: 2px 2px 2px #f85ad1;
+  transform: scale(1.005);
 }
 
 .snippet-card-top {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: space-between;
 }
 
@@ -105,27 +90,37 @@ svg {
 }
 
 .copy-icon:hover {
-  box-shadow: 0 0 10px #ff8c3b,
-  0 0 50px #ff8c3b,
-  0 0 10px #ff8c3b,
-  0 0 10px #ff8c3b,
-  0 0 10px #ff8c3b;
-  transform: scale(1.07);
+  transform: scale(1.1);
 }
 
 .tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: #f85ad1;
-  color: #fff;
-  text-align: center;
   border-radius: 6px;
+  background-color: #f85ad1;
+  color: #ffffff;
+  margin: 5px;
   padding: 5px 0;
   position: absolute;
-  margin: 5px;
+  text-align: center;
+  visibility: hidden;
+  width: 120px;
   z-index: 1;
 }
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
+}
+
+.not-found {
+  color: black;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.smiley svg {
+  font-size: 100px;
+  margin-bottom: 30px;
+}
+
+.not-found div {
+  color: #f85ad1;
 }

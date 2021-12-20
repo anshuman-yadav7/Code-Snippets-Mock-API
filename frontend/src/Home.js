@@ -4,16 +4,16 @@ import './App.css';
 
 import { IoCodeSharp } from 'react-icons/io5';
 import { IoCodeSlashSharp } from 'react-icons/io5';
-
-
+import { BsEmojiFrownFill } from "react-icons/bs";
 
 export default class Home extends React.Component {
+
     state = {
         snippets: [],
         searchText: "",
     }
 
-    componentDidMount(){
+    componentDidMount() {
         fetch("http://localhost:3001/api/get")
         .then(response => response.json())
         .then(data => {
@@ -50,12 +50,10 @@ export default class Home extends React.Component {
                             snippets: dataRes,
                         });
                     }
-            
             })
             .catch(err => {
                 console.log(err);
             });
-        
     }
 
     render() {
@@ -72,15 +70,17 @@ export default class Home extends React.Component {
                         <div>
                             <input className="search-input" type="text" name="search" id="search" placeholder="Search snippets" value={searchText} onChange={this.handleSearch}/>
                         </div>
-                        <div className="sign">
-                            Sign In
-                        </div>
                     </div>
                 </div>
-
                 <div>
                     {
-                        snippets && snippets.length>0 && snippets.map(item=>item && <Snippet data={item}/>)
+                        snippets && snippets.length > 0? snippets.map(item=>item && <Snippet data={item} key={item.id}/>):
+                        <>
+                            <div className="not-found">
+                                <div className="smiley"><BsEmojiFrownFill/></div>
+                                <div className="header">Oops! No snippets found with this word</div>
+                            </div>
+                        </>
                     }
                 </div>
             </div>
