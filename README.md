@@ -1,7 +1,7 @@
 # Code-Snippets-Mock-API
 Code Snippets Mock API
 
-1. 10 code snippets on page loads
+1. Created a Mock API which display multiple code snippets on page load of Frontend
 2. User can search for the snippets by entering some keyword in search bar
 3. User can copy the code snippets to clipboard 
 
